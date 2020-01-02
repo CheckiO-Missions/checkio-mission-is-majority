@@ -1,16 +1,18 @@
-def sum_two(a, b):
-    """
-        sums two passed arguments
-    """
+def is_majority(a):
     # your code here
     return None
 
 
 if __name__ == '__main__':
     print("Example:")
-    print(sum_two(3, 2))
-    
+    print(is_majority([True, True, False, True, False]))
+
     # These "asserts" are used for self-checking and not for an auto-testing
-    assert sum_two(3, 2) == 5, "First"
-    assert sum_two(5, 7) == 12, "Second"
+    assert is_majority([True, True, False, True, False]) == True
+    assert is_majority([True, True, False]) == True
+    assert is_majority([True, True, False, False]) == False
+    assert is_majority([True, True, False, False, False]) == False
+    assert is_majority([False]) == False
+    assert is_majority([True]) == True
+    assert is_majority([]) == False
     print("Coding complete? Click 'Check' to earn cool rewards!")

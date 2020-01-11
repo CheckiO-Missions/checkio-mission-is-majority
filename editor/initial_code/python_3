@@ -1,6 +1,6 @@
-def is_majority(a):
+def is_majority(items: list) -> bool:
     # your code here
-    return None
+    return items
 
 
 if __name__ == '__main__':

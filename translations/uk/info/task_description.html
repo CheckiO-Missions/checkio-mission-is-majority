@@ -1,0 +1,38 @@
+<!-- Describe task in general -->
+
+<p>
+    Ми маємо {% if is_js %}масив{% else %}список{% endif %} логічних (булевих) значень.
+    Давай перевіримо, чи більшість елементів є {% if is_js %}<b class="code">true</b>{% else %}<b class="code">True</b>{% endif %}.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<p>
+    Деякі випадки, варті згадки: 1) порожній {% if is_js %}масив{% else %}список{% endif %} повинен повертати
+    {% if is_js %}<b class="code">false</b>{% else %}<b class="code">False</b>{% endif %};
+    2) якщо однакова кількість {% if is_js %}<b class="code">true</b> і <b class="code">false</b>{% else %}<b class="code">True</b> і <b class="code">False</b>{% endif %},
+    функція повинна повертати {% if is_js %}<b class="code">false</b>{% else %}<b class="code">False</b>{% endif %}.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Вхідні дані:</strong> {% if is_js %}Масив{% else %}Список{% endif %} логічних (булевих) значень.
+</p>
+
+<p>
+    <strong>Вихідні дані:</strong> Логічне (булеве) значення. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Приклади:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+

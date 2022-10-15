@@ -1,0 +1,22 @@
+{% comment %}New initial code template{% endcomment %}
+{% block env %}{% endblock env %}
+
+{% block start %}
+def is_majority(items: list[bool]) -> bool:
+    # your code here
+    return True
+{% endblock start %}
+
+{% block example %}
+print('Example:')
+print(is_majority([True, True, False, True, False]))
+{% endblock %}
+
+{% block tests %}
+{% for t in tests %}
+assert {% block call %}is_majority({{t.input|p_args}}){% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
+{% endblock %}
+
+{% block final %}
+print("The mission is done! Click 'Check Solution' to earn rewards!")
+{% endblock final %}

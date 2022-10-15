@@ -1,7 +1,8 @@
 <!-- Describe task in general -->
 
 <p>
-    We have a {% if interpreter.slug == "js-node" %}Array{% else %}List{% endif %} of booleans. Let's check if the majority of elements are true.
+    We have {% if is_js %}an Array{% else %}a list{% endif %} of booleans.
+    Let's check if the majority of elements are {% if is_js %}<b class="code">true</b>{% else %}<b class="code">True</b>{% endif %}.
 </p>
 
 <p style="text-align: center;">
@@ -9,34 +10,29 @@
 </p>
 
 <p>
-    Some cases worth mentioning: 1) an empty list should return false; 2) if trues and falses have an equal amount, function should return false.
+    Some cases worth mentioning: 1) an empty {% if is_js %}Array{% else %}list{% endif %} should return
+    {% if is_js %}<b class="code">false</b>{% else %}<b class="code">False</b>{% endif %};
+    2) if {% if is_js %}<b class="code">true</b>-s and <b class="code">false</b>-s{% else %}<b class="code">True</b>-s and <b class="code">False</b>-s{% endif %}
+    have an equal amount, function should return {% if is_js %}<b class="code">false</b>{% else %}<b class="code">False</b>{% endif %}.
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> A {% if interpreter.slug == "js-node" %}Array{% else %}List{% endif %} of booleans.
+    <strong>Input:</strong> {% if is_js %}An Array{% else %}A list{% endif %} of booleans.
 </p>
 
 <p>
-    <strong>Output: </strong> A Boolean. 
+    <strong>Output:</strong> A Boolean. 
 </p>
 
 
 <!-- Give some usage examples -->
 <div class="for_info_only">
     <p>
-        <strong>Example:</strong>
+        <strong>Examples:</strong>
     </p>
 
-{% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">isMajority([true, true, false, true, false]) == true
-isMajority([true, true, false]) == true
-</pre>
-{% else %}
-<pre class="brush: python">is_majority([True, True, False, True, False]) == True
-is_majority([True, True, False]) == True
-</pre>
-{% endif %}
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 

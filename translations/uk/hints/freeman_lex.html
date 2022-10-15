@@ -1,0 +1,78 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        Я уявлення не маю, як розв'язувати цю місію.
+    </div>
+    <div class="answer">
+        <p>Ідея проста: порахуй <b class="code">True</b> у списку і порівняй із довжиною списку.</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Як порахувати True в списку?
+    </div>
+    <div class="answer">
+        <p>Використай метод списків <a target="_blank" href="https://www.w3schools.com/python/ref_list_count.asp">list.count()</a>
+        з аргументом <b class="code">True</b> до <b class="code">items</b>.</p>
+        <pre class="brush: python">
+return items.count(True) ...
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Допоможи мені перевірити, чи розрахована кількість складає більшість від елементів списку?
+    </div>
+    <div class="answer">
+        <p>Більшість означає більше половини. Використай вбудовану функцію <a target="_blank" href="https://www.w3schools.com/python/ref_func_len.asp">len()</a>
+        на <b class="code">items</b> і знайди половину від результату (поділи на 2).
+        Вона повинна бути строго менша ніж кількість <b class="code">True</b>.</p>
+        <pre class="brush: python">
+return items.count(True) > len(items) / 2
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Це вже весь розв'язок?
+    </div>
+    <div class="answer">
+        <p>Тобі лише потрібно додати визначення своєї функції.</p>
+        <p>Ось все разом:</p>
+        <pre class="brush: python">
+def is_majority(items: list[bool]) -> bool:
+    
+    return items.count(True) > len(items) / 2
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Покажи мені більше розв'язків!<br />
+        Адже я хочу стати справжнім Python Ніндзею!
+    </div>
+    <div class="answer">
+        <p>Звісно, тримай!</p>
+        <p>Оскільки Python сприймає <b class="code">True</b> як <b class="code">1</b>
+            і <b class="code">False</b> як <b class="code">0</b>, ти просто можеш
+            знайти суму елементів <b class="code">items</b> і вона повинна бути
+            строго більшою ніж половина довжини. 
+        </p>
+        <pre class="brush: python">
+def is_majority(items: list[bool]) -> bool:
+    
+    return sum(items) > len(items) / 2
+        </pre>
+        <p>Це проста місія, але тисни "Best solutions" в меню місії і побачиш деякі
+            інші цікаві розв'язки!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Дякую! Тепер я знаю і розумію більше! Все працює як слід!
+    </div>
+    <div class="answer">
+        Приємно це чути!
+    </div>
+</div>
+</body>

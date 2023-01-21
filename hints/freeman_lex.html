@@ -1,19 +1,26 @@
 <body data-author="freeman_lex">
 <div class="question-answer">
     <div class="question">
-        I have no idea how to start solving this mission.
+        <p>
+            I have no idea how to start solving this mission.
+        </p>
     </div>
     <div class="answer">
-        <p>The idea is simple: count <b class="code">True</b>-s in the list and compare with the length of the list.</p>
+        <p>
+            💡 The idea is simple: count <b class="code">True</b>-s in the list and compare with the length of the list.
+        </p>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        How to count True-s in the list?
+        <p>
+            How to count <b class="code">True</b>-s in the list?
+        </p>
     </div>
     <div class="answer">
-        <p>Use list method <a target="_blank" href="https://www.w3schools.com/python/ref_list_count.asp">list.count()</a>
-        with argument <b class="code">True</b> on <b class="code">items</b>.</p>
+        <p>
+            Use list method <a target="_blank" href="https://www.w3schools.com/python/ref_list_count.asp">list.count()</a> with argument <b class="code">True</b> on <b class="code">items</b>.
+        </p>
         <pre class="brush: python">
 return items.count(True) ...
         </pre>
@@ -21,12 +28,14 @@ return items.count(True) ...
 </div>
 <div class="question-answer">
     <div class="question">
-        Help me to check if counted amount is the majority of the list elements?
+        <p>
+            Help me to check if counted amount is the majority of the list elements.
+        </p>
     </div>
     <div class="answer">
-        <p>Majority means more than a half. Use built-in <a target="_blank" href="https://www.w3schools.com/python/ref_func_len.asp">len()</a>
-        function on <b class="code">items</b> and find a half from the result (divide into 2).
-        It should be strictly less then the amount of <b class="code">True</b>-s.</p>
+        <p>
+            Majority means more than a half. Use built-in <a target="_blank" href="https://www.w3schools.com/python/ref_func_len.asp">len()</a> function on <b class="code">items</b> and find a half from the result (divide into 2). It should be strictly less then the amount of <b class="code">True</b>-s.
+        </p>
         <pre class="brush: python">
 return items.count(True) > len(items) / 2
         </pre>
@@ -34,11 +43,17 @@ return items.count(True) > len(items) / 2
 </div>
 <div class="question-answer">
     <div class="question">
-        Is this the whole solution?
+        <p>
+            Is this the whole solution?
+        </p>
     </div>
     <div class="answer">
-        <p>You just need to add the definition of your function.</p>
-        <p>Here is everything together:</p>
+        <p>
+            You just need to add the definition of your function.
+        </p>
+        <p>
+            Here is everything together:
+        </p>
         <pre class="brush: python">
 def is_majority(items: list[bool]) -> bool:
     
@@ -48,12 +63,15 @@ def is_majority(items: list[bool]) -> bool:
 </div>
 <div class="question-answer">
     <div class="question">
-        Show me more solutions!<br />
-        'Cause I wanna be a real Python Ninnjaa!
+        <p>
+            Show me more solutions!<br />
+            'Cause I wanna be a real 🥇 Python Ninnjaa!
+        </p>
     </div>
     <div class="answer">
         <p>Sure, grab it!</p>
-        <p>Since Python interpreted <b class="code">True</b> as <b class="code">1</b>
+        <p>
+            Since Python interpreted <b class="code">True</b> as <b class="code">1</b>
             and <b class="code">False</b> as <b class="code">0</b>, you just may to
             find sum of the elements of <b class="code">items</b> and it should
             be strictly bigger then half of the length. 
@@ -63,16 +81,23 @@ def is_majority(items: list[bool]) -> bool:
     
     return sum(items) > len(items) / 2
         </pre>
-        <p>This is a simple mission, but click "Best solutions" at mission menu
-            and see some other interesting solutions!</p>
+        <p>
+            <b>
+                This is a simple mission, but click "Best solutions" at mission menu and see some other interesting solutions!
+            </b>
+        </p>
     </div>
 </div>
 <div class="question-answer">
     <div class="question">
-        Thanks! I know and understand more now! Everything works fine!
+        <p>
+            Thanks! I know and understand more now! Everything works fine!
+        </p>
     </div>
     <div class="answer">
-        Glad to hear it!
+        <p>
+            👍Glad to hear it!
+        </p>
     </div>
 </div>
 </body

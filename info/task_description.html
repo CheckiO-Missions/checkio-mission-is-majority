@@ -1,7 +1,7 @@
 <!-- Describe task in general -->
 
 <p>
-    We have {% if is_js %}an Array{% else %}a list{% endif %} of booleans.
+    We have {% if is_js %}an Array{% else %}a list{% endif %} of {% if is_js %}<span translate="repeat">boolean</span>{% else %}<span translate="repeat">bool</span>{% endif %}.
     Let's check if the majority of elements are {% if is_js %}<b class="code">true</b>{% else %}<b class="code">True</b>{% endif %}.
 </p>
 
@@ -18,11 +18,11 @@
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> {% if is_js %}An Array{% else %}A list{% endif %} of booleans.
+    <strong>Input:</strong> {% if is_js %}An Array{% else %}A list{% endif %} of {% if is_js %}<span translate="repeat">boolean</span>{% else %}bool{% endif %}.
 </p>
 
 <p>
-    <strong>Output:</strong> A Boolean. 
+    <strong>Output:</strong> A {% if is_js %}<span translate="repeat">boolean</span>{% else %}<span translate="repeat">bool</span>{% endif %}. 
 </p>
 
 

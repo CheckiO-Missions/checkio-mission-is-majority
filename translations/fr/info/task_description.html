@@ -1,0 +1,35 @@
+<!-- Describe task in general -->
+
+<p>
+    Nous avons {% if is_js %}un <span>tableau</span> <span>(array)</span>{% else %} une <span>liste</span> <span>(list)</span>{% endif %} de {% if is_js %}<span>booléen</span> <span>(boolean)</span>{% else %} bool{% endif %}. Vérifions si la majorité des éléments sont {% if is_js %}<b class="code">true</b> {% else %} <b class="code">True</b> {% endif %}.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<p>
+    Quelques cas méritent d'être mentionnés: 1) un<span>tableau</span> {% if is_js %}<span></span> vide <span>(array)</span>{% else %}<span>list</span>{% endif %} devrait renvoyer {% if is_js %}<b class="code">false</b> {% else %} <b class="code">False</b> {% endif %};
+    2) si {% if is_js %}<b class="code">true</b> -s et <b class="code">false</b>-s{% else %}<b class="code">True</b> -s et <b class="code">False</b>-s{% endif %} ont une quantité égale, la fonction doit renvoyer {% if is_js %}<b class="code">false</b> {% else %} <b class="code">False</b> {% endif %}.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> {% if is_js %}Un <span>tableau</span> <span>(array)</span>{% else %} Une <span>liste</span> <span>(list)</span>{% endif %} de {% if is_js %}<span>booléen</span> <span>(boolean)</span>{% else %} bool{% endif %}.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Un tableau {% if is_js %}<span>booléen</span> <span>(boolean)</span>{% else %} bool{% endif %}. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Exemples:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+

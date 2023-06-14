@@ -1,0 +1,35 @@
+<!-- Describe task in general -->
+
+<p>
+    Mamy {% if is_js %}tablicę <span>(array)</span>{% else %} listę <span>(list)</span>{% endif %} wartości logicznych <span>(bool{% if is_js %}ean{% endif %})</span>. Sprawdźmy, czy większość elementów to <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<p>
+    Kilka przypadków, o których warto wspomnieć: 1) pusta tablica {% if is_js %} <span>(array)</span> {% else %} lista <span>(list)</span>{% endif %} powinna zwrócić <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>;
+    2) jeśli <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>-s i <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>-s mają równą wartość, funkcja powinna zwrócić <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Wejście:</strong> {% if is_js %}Tablica <span>(array)</span>{% else %} Lista <span>(list)</span>{% endif %} wartości logicznych <span>(bool{% if is_js %}ean{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Wartość logiczna <span>(bool{% if is_js %}ean{% endif %})</span>. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Przykłady:</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+

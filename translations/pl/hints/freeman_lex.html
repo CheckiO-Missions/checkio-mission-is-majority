@@ -1,0 +1,103 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Nie mam pojęcia, jak zacząć rozwiązywać tę misję.
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            pomysł jest prosty: proszę policzyć <b class="code">True</b>-s na liście i porównać z długością listy.
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Jak policzyć <b class="code">True</b>-s na liście?
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Proszę użyć metody listy <a target="_blank" href="https://www.w3schools.com/python/ref_list_count.asp">list.count()</a> z argumentem <b class="code">True</b> na <b class="code">items</b>.
+        </p>
+        <pre class="brush: python">
+return items.count(True) ...
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Proszę mi pomóc sprawdzić, czy zliczona kwota stanowi większość elementów listy.
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Większość oznacza więcej niż połowę. Proszę użyć wbudowanej funkcji <a target="_blank" href="https://www.w3schools.com/python/ref_func_len.asp">len()</a> na <b class="code">items</b> i znaleźć połowę z wyniku (podzielić na 2). Powinna ona być dokładnie mniejsza niż ilość <b class="code">True</b>-s.
+        </p>
+        <pre class="brush: python">
+return items.count(True)> len(items) / 2
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Czy to jest całe rozwiązanie?
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            Musi Pan tylko dodać definicję swojej funkcji.
+        </p>
+        <p>
+            Oto wszystko razem:
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def is_majority(items: list[bool]) -> bool:
+    
+    return items.count(True)> len(items) / 2
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Proszę pokazać mi więcej rozwiązań!<br />
+            bo chcę być prawdziwym 🥇 Pythonem Ninnjaa!
+        </p>
+    </div>
+    <div class="answer">
+        <p>Jasne, proszę łapać!</p>
+        <p>
+            Ponieważ Python interpretuje <b class="code">True</b> jako <b class="code">1</b>
+            a <b class="code">False</b> jako <b class="code">0</b>, może Pan po prostu
+            znaleźć sumę elementów <b class="code">items</b> i powinna ona być
+            być dokładnie większa niż połowa długości. 
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def is_majority(items: list[bool]) -> bool:
+    
+    return sum(items)> len(items) / 2
+        </pre>
+        </div>
+        <p>To prosta misja, ale proszę kliknąć <b>Best Solutions</b> w menu misji i zobaczyć inne ciekawe rozwiązania!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            Dzięki! Teraz wiem i rozumiem więcej! Wszystko działa jak należy!
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            miło mi to słyszeć!
+        </p>
+    </div>
+</div>
+&lt;/body

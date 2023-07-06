@@ -1,0 +1,103 @@
+<body data-author="freeman_lex">
+<div class="question-answer">
+    <div class="question">
+        <p>
+            我不知道如何开始解决这个任务。
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            💡想法很简单：计算列表中的<b class="code">True</b>-s，并与列表的长度进行比较。
+        </p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            如何计算列表中的<b class="code">True</b>-s？
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            使用列表方法<a target="_blank" href="https://www.w3schools.com/python/ref_list_count.asp">list.count()</a> ，参数<b class="code">True</b> 在<b class="code">items</b>.
+        </p>
+        <pre class="brush: python">
+return items.count(True) ...
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            帮助我检查所计算的金额是否是列表元素的大多数。
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            多数意味着超过一半。在<b class="code">items</b> 上使用内置的<a target="_blank" href="https://www.w3schools.com/python/ref_func_len.asp">len()</a> 函数，从结果中找出一半（除以 2）。它应该严格小于<b class="code">True</b>-s 的数量。
+        </p>
+        <pre class="brush: python">
+return items.count(True)> len(items) / 2
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            这就是整个解决方案吗？
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            你只需要添加你的函数的定义。
+        </p>
+        <p>
+            这里是所有东西的组合：
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def is_majority(items: list[bool]) -> bool:
+    
+    return items.count(True)> len(items) / 2
+        </pre>
+        </div>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            给我看更多的解决方案!<br />
+            因为我想成为一个真正的🥇 Python Ninnjaa!
+        </p>
+    </div>
+    <div class="answer">
+        <p>当然，抓住它!</p>
+        <p>
+            由于Python将<b class="code">True</b> 解释为<b class="code">1</b>
+            和<b class="code">False</b> 解释为<b class="code">0</b> ，你只需将
+            找出<b class="code">items</b> 的元素之和，它应该是
+            应该严格大于长度的一半。 
+        </p>
+        <div class="spoiler">
+        <pre class="brush: python">
+def is_majority(items: list[bool]) -> bool:
+    
+    return sum(items)> len(items) / 2
+        </pre>
+        </div>
+        <p>这是一个简单的任务，但请点击任务菜单上的<b>Best Solutions</b> ，看看其他一些有趣的解决方法!</p>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        <p>
+            谢谢!我现在知道并理解了更多!一切工作都很顺利!
+        </p>
+    </div>
+    <div class="answer">
+        <p>
+            很高兴听到这个消息!
+        </p>
+    </div>
+</div>
+&lt;/body

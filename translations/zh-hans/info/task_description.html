@@ -1,0 +1,35 @@
+<!-- Describe task in general -->
+
+<p>
+    我们有{% if is_js %}一个数组<span>(array)</span>{% else %} 一个逻辑值的列表<span>(list)</span>{% endif %} <span>(bool{% if is_js %}ean{% endif %})</span>.让我们检查一下大多数的元素是否是 <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<p>
+    一些值得一提的情况：1）一个空的{% if is_js %}数组<span>(array)</span>{% else %} 列表<span>(list)</span>{% endif %} 应该返回 <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>;
+    2) 如果 <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>-s和 <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>-s有相等的数量，函数应该返回 <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong> {% if is_js %}一个数组<span>(array)</span>{% else %} 一个逻辑值的列表<span>(list)</span>{% endif %} <span>(bool{% if is_js %}ean{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>一个逻辑值 <span>(bool{% if is_js %}ean{% endif %})</span>. 
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>例子：</strong>
+    </p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+

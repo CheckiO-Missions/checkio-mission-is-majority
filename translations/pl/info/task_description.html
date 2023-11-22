@@ -1,16 +1,19 @@
 <!-- Describe task in general -->
-
-<p>
-    Mamy {% if is_js %}tablicę <span>(array)</span>{% else %} listę <span>(list)</span>{% endif %} wartości logicznych <span>(bool{% if is_js %}ean{% endif %})</span>. Sprawdźmy, czy większość elementów to <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>.
-</p>
-
 <p style="text-align: center;">
     <img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
 </p>
 
 <p>
+    Mamy {% if is_js %}tablicę <span>(array)</span>{% else %} listę <span>(list)</span>{% endif %} wartości logicznych <span>(bool{% if is_js %}ean{% endif %})</span>. Sprawdźmy, czy większość elementów to <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>.
+</p>
+
+<p>
     Kilka przypadków, o których warto wspomnieć: 1) pusta tablica {% if is_js %} <span>(array)</span> {% else %} lista <span>(list)</span>{% endif %} powinna zwrócić <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>;
     2) jeśli <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>-s i <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>-s mają równą wartość, funkcja powinna zwrócić <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.svg" alt="example" style="max-height: 200px"/>
 </p>
 
 <!-- Explain input and output values -->

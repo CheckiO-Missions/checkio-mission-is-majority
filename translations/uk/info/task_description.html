@@ -1,12 +1,11 @@
 <!-- Describe task in general -->
+<p style="text-align: center;">
+    <img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+</p>
 
 <p>
     Ми маємо {% if is_js %}масив{% else %}список{% endif %} логічних (булевих) значень.
     Давай перевіримо, чи більшість елементів є {% if is_js %}<b class="code">true</b>{% else %}<b class="code">True</b>{% endif %}.
-</p>
-
-<p style="text-align: center;">
-    <img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
 </p>
 
 <p>
@@ -14,6 +13,10 @@
     {% if is_js %}<b class="code">false</b>{% else %}<b class="code">False</b>{% endif %};
     2) якщо однакова кількість {% if is_js %}<b class="code">true</b> і <b class="code">false</b>{% else %}<b class="code">True</b> і <b class="code">False</b>{% endif %},
     функція повинна повертати {% if is_js %}<b class="code">false</b>{% else %}<b class="code">False</b>{% endif %}.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.svg" alt="example" style="max-height: 200px"/>
 </p>
 
 <!-- Explain input and output values -->

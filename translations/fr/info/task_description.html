@@ -1,16 +1,19 @@
 <!-- Describe task in general -->
-
-<p>
-    Nous avons {% if is_js %}un <span>tableau</span> <span>(array)</span>{% else %}une <span>liste</span> <span>(list)</span>{% endif %} de {% if is_js %}<span>booléen</span> <span>(boolean)</span>{% else %}<span>booléen</span> <span>(bool){% endif %}. Vérifions si la majorité des éléments sont {% if is_js %}<b class="code">true</b>{% else %}<b class="code">True</b>{% endif %}.
-</p>
-
 <p style="text-align: center;">
     <img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
 </p>
 
 <p>
+    Nous avons {% if is_js %}un <span>tableau</span> <span>(array)</span>{% else %}une <span>liste</span> <span>(list)</span>{% endif %} de {% if is_js %}<span>booléen</span> <span>(boolean)</span>{% else %}<span>booléen</span> <span>(bool){% endif %}. Vérifions si la majorité des éléments sont {% if is_js %}<b class="code">true</b>{% else %}<b class="code">True</b>{% endif %}.
+</p>
+
+<p>
     Quelques cas méritent d'être mentionnés: 1) un {% if is_js %}<span>tableau</span> vide <span>(array)</span>{% else %}<span>liste</span> <span>(list)</span>{% endif %} devrait renvoyer {% if is_js %}<b class="code">false</b>{% else %}<b class="code">False</b>{% endif %};
     2) si {% if is_js %}<b class="code">true</b> -s et <b class="code">false</b>-s{% else %}<b class="code">True</b> -s et <b class="code">False</b>-s{% endif %} ont une quantité égale, la fonction doit renvoyer {% if is_js %}<b class="code">false</b>{% else %}<b class="code">False</b>{% endif %}.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.svg" alt="example" style="max-height: 200px"/>
 </p>
 
 <!-- Explain input and output values -->

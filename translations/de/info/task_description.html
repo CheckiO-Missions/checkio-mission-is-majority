@@ -1,16 +1,19 @@
 <!-- Describe task in general -->
-
-<p>
-    Wir haben {% if is_js %}ein Array <span>(array)</span>{% else %} eine Liste <span>(list)</span>{% endif %} von logischen Werten <span>(bool{% if is_js %}ean{% endif %})</span>. Lassen Sie uns prüfen, ob die Mehrheit der Elemente <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>.
-</p>
-
 <p style="text-align: center;">
     <img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
 </p>
 
 <p>
+    Wir haben {% if is_js %}ein Array <span>(array)</span>{% else %} eine Liste <span>(list)</span>{% endif %} von logischen Werten <span>(bool{% if is_js %}ean{% endif %})</span>. Lassen Sie uns prüfen, ob die Mehrheit der Elemente <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>.
+</p>
+
+<p>
     Einige erwähnenswerte Fälle: 1) ein leeres {% if is_js %}Array <span>(array)</span>{% else %} Liste <span>(list)</span>{% endif %} sollte zurückgeben <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>;
     2) wenn <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>-s und <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>-s eine gleiche Anzahl haben, sollte die Funktion zurückgeben <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.svg" alt="example" style="max-height: 200px"/>
 </p>
 
 <!-- Explain input and output values -->

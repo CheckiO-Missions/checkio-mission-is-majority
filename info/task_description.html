@@ -1,16 +1,19 @@
 <!-- Describe task in general -->
-
-<p>
-    We have {% if is_js %}an <span translate="repeat">array</span>{% else %}a <span translate="repeat">list</span>{% endif %} of logic values <span translate="no">(bool{% if is_js %}ean{% endif %})</span>. Let's check if the majority of elements are <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>.
-</p>
-
 <p style="text-align: center;">
     <img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
 </p>
 
 <p>
+    We have {% if is_js %}an <span translate="repeat">array</span>{% else %}a <span translate="repeat">list</span>{% endif %} of logic values <span translate="no">(bool{% if is_js %}ean{% endif %})</span>. Let's check if the majority of elements are <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>.
+</p>
+
+<p>
     Some cases worth mentioning: 1) an empty {% if is_js %}<span translate="repeat">array</span>{% else %}<span translate="repeat">list</span>{% endif %} should return <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>;
     2) if <b class="code">{% if is_js %}t{% else %}T{% endif %}rue</b>-s and <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>-s have an equal amount, function should return <b class="code">{% if is_js %}f{% else %}F{% endif %}alse</b>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.svg" alt="example" style="max-height: 200px"/>
 </p>
 
 <!-- Explain input and output values -->
